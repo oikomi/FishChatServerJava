@@ -11,19 +11,7 @@ import java.util.List;
 public class GateWayBean {
     private String listen;
     private String logFile;
-    private List<MsgServer> msgServerList = new ArrayList<MsgServer>();
-
-    private static class MsgServer {
-        private String msgServer;
-
-        public String getMsgServer() {
-            return msgServer;
-        }
-
-        public void setMsgServer(String msgServer) {
-            this.msgServer = msgServer;
-        }
-    }
+    private List<String> msgServerList = new ArrayList<String>();
 
     public String getListen() {
         return listen;
@@ -42,11 +30,11 @@ public class GateWayBean {
     }
 
 
-    public List<MsgServer> getMsgServerList() {
+    public List<String> getMsgServerList() {
         return msgServerList;
     }
 
-    public void setMsgServerList(List<MsgServer> msgServerList) {
+    public void setMsgServerList(List<String> msgServerList) {
         this.msgServerList = msgServerList;
     }
 }

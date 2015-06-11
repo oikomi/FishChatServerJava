@@ -2,39 +2,45 @@ package org.miaohong.fishchat.gateway.config;
 
 import com.alibaba.fastjson.JSONReader;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+
+import com.alibaba.fastjson.JSON;
 
 /**
  * Created by haroldmiao on 2015/6/11.
  */
 public class GateWayConfig {
     private String configFilePath;
-    private JSONReader reader = null;
+    //private JSONReader reader = null;
     private GateWayBean gateWayBean = null;
 
     public GateWayConfig(String configFilePath) {
         this.configFilePath = configFilePath;
     }
 
-    public GateWayBean Unmarshal() {
+    // TODO not a good idear
+    public void Unmarshal() {
+        FileReader fr = null;
+        String result = null;
         try {
-            reader = new JSONReader(new FileReader(configFilePath));
+            File file = new File(configFilePath);
+            fr = new FileReader(file);
+            char[] contents = new char[(int) file.length()];
+            fr.read(contents, 0, (int) file.length());
+            result = new String(contents);
+            fr.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
-        reader.startObject();
-        while(reader.hasNext()) {
-            //String key = reader.readString();
-            GateWayBean gateWayBean = reader.readObject(GateWayBean.class);
-            // handle vo ...
-            // 处理vo对象，比方说插入数据库，或者获取值做其他业务逻辑功能
-        }
-        reader.endObject();
-        reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
 
-        return gateWayBean;
+        }
+        gateWayBean = JSON.parseObject(result, GateWayBean.class);
+
+        //System.out.println(gateWayBean);
     }
-
-
 }

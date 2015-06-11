@@ -10,7 +10,6 @@ import java.io.UnsupportedEncodingException;
  * Created by haroldmiao on 2015/6/11.
  */
 public class GateWayServerHandler extends ChannelHandlerAdapter {
-
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf buf = (ByteBuf)msg;

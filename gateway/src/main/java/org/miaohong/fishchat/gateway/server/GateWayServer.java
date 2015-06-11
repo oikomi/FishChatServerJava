@@ -9,32 +9,32 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import org.miaohong.fishchat.gateway.config.GateWayConfig;
+import org.miaohong.fishchat.libnet.api.Api;
 
 /**
  * Created by haroldmiao on 2015/6/11.
  */
 public class GateWayServer {
-    public void bind(int port){
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
-        try {
-            ServerBootstrap b = new ServerBootstrap();
-            b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
-                    .option(ChannelOption.SO_BACKLOG, 1024).childHandler(new ChildChannelHandler());
+//    public void bind(int port){
+//        EventLoopGroup bossGroup = new NioEventLoopGroup();
+//        EventLoopGroup workerGroup = new NioEventLoopGroup();
+//        try {
+//            ServerBootstrap b = new ServerBootstrap();
+//            b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
+//                    .option(ChannelOption.SO_BACKLOG, 1024).childHandler(new ChildChannelHandler());
+//
+//            ChannelFuture f = b.bind(port).sync();
+//            f.channel().closeFuture().sync();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } finally {
+//            bossGroup.shutdownGracefully();
+//            workerGroup.shutdownGracefully();
+//        }
+//    }
 
 
-            ChannelFuture f = b.bind(port).sync();
-            f.channel().closeFuture().sync();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } finally {
-            bossGroup.shutdownGracefully();
-            workerGroup.shutdownGracefully();
-        }
-    }
-
-
-    private class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
+    private static class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
         @Override
         protected void initChannel(SocketChannel arg0) throws Exception {
             arg0.pipeline().addLast(new GateWayServerHandler());
@@ -52,7 +52,7 @@ public class GateWayServer {
 
         gc.Unmarshal();
 
-        new GateWayServer().bind(port);
+        Api.Bind(port, new ChildChannelHandler());
     }
 
 }
