@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a8e15d8-218b-4f8e-a046-694d2a8d9bec" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/api/Api.java" afterPath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/api/Api.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/protocol/Channel.java" afterPath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/protocol/Channel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FishChatServer.iml" afterPath="$PROJECT_DIR$/FishChatServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/frame/FrameConst.java" afterPath="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/frame/FrameConst.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayBean.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayConfig.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServer.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/gateway.iml" afterPath="$PROJECT_DIR$/gateway/gateway.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/gateway.json" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/gateway.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/libnet.iml" afterPath="$PROJECT_DIR$/libnet/libnet.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/pom.xml" afterPath="$PROJECT_DIR$/gateway/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/pom.xml" afterPath="$PROJECT_DIR$/libnet/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FishChatServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/frame/FrameConst.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,14 +87,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GateWayServerHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GateWayServerHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6211096">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.047954865">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +199,6 @@
         <option value="$PROJECT_DIR$/libnet/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/api/Api.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/gateway.json" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayBean.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayConfig.java" />
@@ -174,6 +206,7 @@
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServer.java" />
         <option value="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/frame/FrameConst.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -526,7 +559,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
@@ -851,12 +884,12 @@
       <option name="number" value="Default" />
       <updated>1433987359647</updated>
       <workItem from="1433987363112" duration="16177000" />
-      <workItem from="1434007970801" duration="3114000" />
+      <workItem from="1434007970801" duration="4665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19291000" />
+    <option name="totallyTimeSpent" value="20842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1041,6 +1074,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,17 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1333333">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1134,10 +1157,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/frame/FrameConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1145,20 +1178,21 @@
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/GateWayServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6211096">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.047954865">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
