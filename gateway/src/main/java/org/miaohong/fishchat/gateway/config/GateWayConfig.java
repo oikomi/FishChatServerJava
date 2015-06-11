@@ -14,8 +14,24 @@ import com.alibaba.fastjson.JSON;
  */
 public class GateWayConfig {
     private String configFilePath;
-    //private JSONReader reader = null;
     private GateWayBean gateWayBean = null;
+
+    public GateWayBean getGateWayBean() {
+        return gateWayBean;
+    }
+
+    public void setGateWayBean(GateWayBean gateWayBean) {
+        this.gateWayBean = gateWayBean;
+    }
+
+    public String getConfigFilePath() {
+        return configFilePath;
+    }
+
+    public void setConfigFilePath(String configFilePath) {
+        this.configFilePath = configFilePath;
+    }
+
 
     public GateWayConfig(String configFilePath) {
         this.configFilePath = configFilePath;

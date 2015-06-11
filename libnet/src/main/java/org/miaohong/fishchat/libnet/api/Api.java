@@ -13,7 +13,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * Created by haroldmiao on 2015/6/11.
  */
 public class Api {
-    public static void Bind(int port, ChannelInitializer<SocketChannel> h) {
+    public static void Bind(String port, ChannelInitializer<SocketChannel> h) {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {

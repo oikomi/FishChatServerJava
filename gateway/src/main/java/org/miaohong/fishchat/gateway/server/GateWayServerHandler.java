@@ -24,8 +24,6 @@ public class GateWayServerHandler extends ChannelHandlerAdapter {
         }
 
         System.out.println(body);
-        ctx.write("hello");
-
     }
 
     @Override

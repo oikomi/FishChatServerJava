@@ -9,16 +9,16 @@ import java.util.List;
  */
 
 public class GateWayBean {
-    private String listen;
+    private String port;
     private String logFile;
     private List<String> msgServerList = new ArrayList<String>();
 
-    public String getListen() {
-        return listen;
+    public String getPort() {
+        return port;
     }
 
-    public void setListen(String listen) {
-        this.listen = listen;
+    public void setPort(String port) {
+        this.port = port;
     }
 
     public String getLogFile() {
