@@ -5,6 +5,7 @@ FishChatServerJava
 FishChatServer的Java版本
 
 
+核心网络库基于Netty5.0
 
 Copyright & License
 ===================

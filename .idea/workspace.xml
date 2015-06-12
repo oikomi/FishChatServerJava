@@ -20,6 +20,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_5_0_0_Alpha2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/server/MsgServer.java" afterPath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/server/MsgServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerBean.java" afterPath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerConfig.java" afterPath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/ProtocolProc.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/ProtocolProc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/Util.java" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/Util.java" />
@@ -29,11 +32,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/gateway.json" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/gateway.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/libnet.iml" afterPath="$PROJECT_DIR$/libnet/libnet.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/log.iml" afterPath="$PROJECT_DIR$/log/log.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/log/src/main/resources/logback.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manager/manager.iml" afterPath="$PROJECT_DIR$/manager/manager.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitor/monitor.iml" afterPath="$PROJECT_DIR$/monitor/monitor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msgserver/msgserver.iml" afterPath="$PROJECT_DIR$/msgserver/msgserver.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/msgserver.json" afterPath="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/msgserver.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway/pom.xml" afterPath="$PROJECT_DIR$/gateway/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libnet/pom.xml" afterPath="$PROJECT_DIR$/libnet/pom.xml" />
@@ -77,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MsgServerBean.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MsgServerBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47090665">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
                 <element signature="e#625#626#0" expanded="true" />
@@ -128,11 +133,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgServerConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9666667">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MsgServerConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.27604872">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
@@ -221,7 +239,6 @@
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/config/GateWayConfig.java" />
         <option value="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/protocol/Cmd.java" />
         <option value="$PROJECT_DIR$/libnet/src/main/java/org/miaohong/fishchat/libnet/protocol/Channel.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/log/pom.xml" />
         <option value="$PROJECT_DIR$/log/src/main/java/org/miaohong/fishchat/log/Log.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/org/miaohong/fishchat/gateway/server/Util.java" />
@@ -242,6 +259,7 @@
         <option value="$PROJECT_DIR$/msgserver/pom.xml" />
         <option value="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/server/MsgServer.java" />
         <option value="$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/msgserver.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -890,12 +908,12 @@
       <workItem from="1434007970801" duration="24806000" />
       <workItem from="1434097845297" duration="24000" />
       <workItem from="1434097936620" duration="460000" />
-      <workItem from="1434098451736" duration="4008000" />
+      <workItem from="1434098451736" duration="4650000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45475000" />
+    <option name="totallyTimeSpent" value="46117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1074,16 +1092,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar!/com/alibaba/fastjson/JSON.class">
@@ -1318,19 +1326,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1345,7 +1341,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47090665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="e#625#626#0" expanded="true" />
@@ -1388,6 +1384,29 @@
             <element signature="e#2418#2419#0" expanded="true" />
             <element signature="e#2490#2491#0" expanded="true" />
             <element signature="e#2548#2549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9666667">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msgserver/src/main/java/org/miaohong/fishchat/msgserver/config/MsgServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27604872">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
