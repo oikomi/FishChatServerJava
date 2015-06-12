@@ -41,6 +41,12 @@
             <version>5.0.0.Alpha2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>msgpack</artifactId>
+            <version>0.6.12</version>
+        </dependency>
+
     </dependencies>
 
     <build>
