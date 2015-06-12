@@ -9,11 +9,15 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import org.miaohong.fishchat.gateway.config.GateWayConfig;
 import org.miaohong.fishchat.libnet.api.Api;
 import org.miaohong.fishchat.libnet.frame.FrameConst;
+import org.miaohong.fishchat.log.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by haroldmiao on 2015/6/11.
  */
 public class GateWayServer {
+
     private static class GateWayChannelHandler extends ChannelInitializer<SocketChannel> {
         @Override
         protected void initChannel(SocketChannel sc) throws Exception {
@@ -27,6 +31,7 @@ public class GateWayServer {
     }
 
     public static void main(String[] args) {
+        Log.logger.info("gateway server start");
         GateWayConfig gc = new GateWayConfig("../src/main/java/org/miaohong/fishchat/gateway/config/gateway.json");
         gc.Unmarshal();
         Api.Bind(gc.getGateWayBean().getPort(), new GateWayChannelHandler());

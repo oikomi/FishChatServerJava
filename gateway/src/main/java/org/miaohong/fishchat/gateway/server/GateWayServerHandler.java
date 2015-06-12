@@ -7,6 +7,7 @@ import io.netty.channel.ChannelHandlerContext;
 import org.miaohong.fishchat.gateway.config.GateWayBean;
 import org.miaohong.fishchat.libnet.protocol.Cmd;
 import org.miaohong.fishchat.libnet.protocol.CmdSimple;
+import org.miaohong.fishchat.log.Log;
 
 import java.io.UnsupportedEncodingException;
 
@@ -14,20 +15,22 @@ import java.io.UnsupportedEncodingException;
  * Created by haroldmiao on 2015/6/11.
  */
 public class GateWayServerHandler extends ChannelHandlerAdapter {
-
     private CmdSimple cmd;
     private ProtocolProc pp;
 
+    public GateWayServerHandler() {
+        pp = new ProtocolProc();
+    }
 
-    private void parseCmd(CmdSimple cmd) {
+    private void parseCmd(ChannelHandlerContext ctx, CmdSimple cmd) {
         if (cmd == null) {
             return;
         }
 
         switch (cmd.getCmdName()) {
             case Cmd.REQ_MSG_SERVER_CMD:
-                System.out.println("  ");
-
+                Log.logger.info("Cmd.REQ_MSG_SERVER_CMD");
+                pp.procReqMsgServer(ctx, cmd);
         }
     }
 
@@ -44,11 +47,12 @@ public class GateWayServerHandler extends ChannelHandlerAdapter {
 //            e.printStackTrace();
 //        }
 //
-        System.out.println(req);
+        //System.out.println(req);
 
         cmd = JSON.parseObject(req, CmdSimple.class);
+        //System.out.println(cmd);
 
-        parseCmd(cmd);
+        parseCmd(ctx, cmd);
     }
 
     @Override

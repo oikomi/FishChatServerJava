@@ -1,4 +1,3 @@
-![logo](./docs/pics/logo.png)
 
 FishChatServerJava
 ======

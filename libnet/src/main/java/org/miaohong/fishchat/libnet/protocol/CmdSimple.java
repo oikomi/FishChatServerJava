@@ -26,4 +26,10 @@ public class CmdSimple {
     public void setArgs(List<String> args) {
         this.args = args;
     }
+
+
+    @Override
+    public String toString() {
+        return cmdName + " " + args;
+    }
 }
