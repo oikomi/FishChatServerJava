@@ -56,7 +56,5 @@ public class GateWayConfig {
 
         }
         gateWayBean = JSON.parseObject(result, GateWayBean.class);
-
-        //System.out.println(gateWayBean);
     }
 }

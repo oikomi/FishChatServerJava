@@ -17,7 +17,6 @@ public class GateWayServer {
     private static class GateWayChannelHandler extends ChannelInitializer<SocketChannel> {
         @Override
         protected void initChannel(SocketChannel sc) throws Exception {
-            //sc.pipeline().addLast(new GateWayServerHandler());
             ChannelPipeline pipeline = sc.pipeline();
 
             pipeline.addLast("framedecoder",new LengthFieldBasedFrameDecoder(FrameConst.MAX_FRAME_LENGTH,
