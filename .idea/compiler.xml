@@ -24,13 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="libnet" />
       </profile>
-      <profile default="false" name="Annotation profile for gateway" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="gateway" />
-      </profile>
       <profile default="false" name="Annotation profile for log" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
@@ -38,13 +31,54 @@
         <processorPath useClasspath="true" />
         <module name="log" />
       </profile>
+      <profile default="false" name="Annotation profile for gateway" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gateway" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gateway (1)" />
+        <module name="msgserver" />
+      </profile>
+      <profile default="false" name="Annotation profile for monitor" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="monitor" />
+      </profile>
+      <profile default="false" name="Annotation profile for router" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="router" />
+      </profile>
+      <profile default="false" name="Annotation profile for manager" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="manager" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="FishChatServer" target="1.7" />
       <module name="FishChatServerJava" target="1.7" />
       <module name="gateway" target="1.7" />
+      <module name="gateway (1)" target="1.5" />
       <module name="libnet" target="1.7" />
       <module name="log" target="1.7" />
+      <module name="manager" target="1.7" />
+      <module name="monitor" target="1.7" />
+      <module name="msgserver" target="1.5" />
+      <module name="router" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

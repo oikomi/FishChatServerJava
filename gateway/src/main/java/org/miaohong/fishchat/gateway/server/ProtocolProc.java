@@ -23,15 +23,12 @@ public class ProtocolProc {
 
     public void procReqMsgServer(ChannelHandlerContext ctx, CmdSimple cmd) {
         Log.logger.info("procReqMsgServer");
-        Log.logger.info(cmd.toString());
         ArrayList<String> args = new ArrayList<String>();
         String msgServer = Util.selectMsgServer(gc.getGateWayBean().getMsgServerList());
         CmdSimple respCmd = new CmdSimple(Cmd.SELECT_MSG_SERVER_FOR_CLIENT_CMD);
         args.add(msgServer);
         respCmd.setArgs(args);
-
         ByteBuf resp = Unpooled.copiedBuffer(JSON.toJSONString(respCmd).getBytes());
-
         ctx.write(resp);
     }
 
