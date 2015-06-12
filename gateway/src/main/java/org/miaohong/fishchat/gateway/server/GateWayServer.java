@@ -33,7 +33,6 @@ public class GateWayServer {
             pipeline.addLast("frameDecoder",new LengthFieldBasedFrameDecoder(FrameConst.MAX_FRAME_LENGTH,
                     FrameConst.FIELD_OFFSET_LENGTH, FrameConst.HEADER_LENGTH,
                     FrameConst.ADJUSTMENT_LENGTH, FrameConst.STRIP_BYTES_LENGTH));
-            //pipeline.addLast("msgpack decoder", new MsgpackDecoder());
             pipeline.addLast("frameEncoder", new LengthFieldPrepender(FrameConst.HEADER_LENGTH));
             pipeline.addLast(new GateWayServerHandler(gc));
         }

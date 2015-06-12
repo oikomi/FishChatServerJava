@@ -9,37 +9,37 @@ import java.util.List;
  * Created by haroldmiao on 2015/6/12.
  */
 public class CmdSimple implements Serializable {
-    private String CmdName;
-    private ArrayList Args = new ArrayList();
+    private String cmdName;
+    private ArrayList args = new ArrayList();
 
     public CmdSimple() {
 
     }
 
     public CmdSimple(String cmdName) {
-        CmdName = cmdName;
+        cmdName = cmdName;
     }
 
     public ArrayList getArgs() {
-        return Args;
+        return args;
     }
 
     public void setArgs(ArrayList args) {
-        Args = args;
+        args = args;
     }
 
 
     public String getCmdName() {
-        return CmdName;
+        return cmdName;
     }
 
     public void setCmdName(String cmdName) {
-        CmdName = cmdName;
+        cmdName = cmdName;
     }
 
 
     @Override
     public String toString() {
-        return CmdName + " " + Args;
+        return cmdName + " " + args;
     }
 }
