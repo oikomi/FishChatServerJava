@@ -4,6 +4,8 @@ FishChatServerJava
 
 FishChatServer的Java版本
 
+golang版本见 https://github.com/oikomi/FishChatServer
+
 FAQ
 ======
 ##### 为什么要用Java重写
