@@ -1,4 +1,4 @@
-package org.miaohong.fishchat.msgserver.server;
+package org.miaohong.fishchat.router.server;
 
 import com.alibaba.fastjson.JSON;
 import io.netty.buffer.ByteBuf;
@@ -7,18 +7,17 @@ import io.netty.channel.ChannelHandlerContext;
 import org.miaohong.fishchat.libnet.protocol.Cmd;
 import org.miaohong.fishchat.libnet.protocol.CmdSimple;
 import org.miaohong.fishchat.log.Log;
-import org.miaohong.fishchat.msgserver.config.MsgServerConfig;
+import org.miaohong.fishchat.router.config.RouterConfig;
 
 import java.io.UnsupportedEncodingException;
 
 /**
  * Created by haroldmiao on 2015/6/13.
  */
-public class MsgServerServerHandler  extends ChannelHandlerAdapter {
+public class RouterServerHandler  extends ChannelHandlerAdapter {
     private ProtocolProc pp;
-
-    public MsgServerServerHandler(MsgServerConfig mc) {
-        pp = new ProtocolProc(mc);
+    public RouterServerHandler(RouterConfig rc) {
+        pp = new ProtocolProc(rc);
     }
 
     public void parseCmd(ChannelHandlerContext ctx, CmdSimple cmd) {
@@ -30,24 +29,7 @@ public class MsgServerServerHandler  extends ChannelHandlerAdapter {
         Log.logger.info(cmd.getCmdName());
 
         switch (cmd.getCmdName()) {
-            case Cmd.SEND_PING_CMD:
-                pp.procSendPing(ctx, cmd);
-            case Cmd.SUBSCRIBE_CHANNEL_CMD:
-                pp.procSubscribeChannel(ctx, cmd);
-            case Cmd.SEND_MESSAGE_P2P_CMD:
-                pp.procSendMessageP2P(ctx, cmd);
-            case Cmd.ROUTE_MESSAGE_P2P_CMD:
-                pp.procRouteMessageP2P(ctx, cmd);
-            case Cmd.CREATE_TOPIC_CMD:
-                pp.procCreateTopic(ctx, cmd);
-            case Cmd.JOIN_TOPIC_CMD:
-                pp.procJoinTopic(ctx, cmd);
-            case Cmd.SEND_MESSAGE_TOPIC_CMD:
-                pp.procSendMessageTopic(ctx, cmd);
-            case Cmd.P2P_ACK_CMD:
-                pp.procP2pAck(ctx, cmd);
-            case Cmd.SEND_CLIENT_ID_CMD:
-                pp.procSendClientID(ctx, cmd);
+
 
         }
     }
@@ -80,5 +62,4 @@ public class MsgServerServerHandler  extends ChannelHandlerAdapter {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         ctx.close();
     }
-
 }

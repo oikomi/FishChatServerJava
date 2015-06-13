@@ -22,9 +22,37 @@ public class ProtocolProc {
         this.mc = mc;
     }
 
+
+    public void procSendPing(ChannelHandlerContext ctx, CmdSimple cmd) {
+
+
+    }
+
     public void procSendClientID(ChannelHandlerContext ctx, CmdSimple cmd) {
         Log.logger.info("procSendClientID");
         String cid = cmd.getArgs().get(0);
+
+    }
+
+    public void procSubscribeChannel(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procSendMessageP2P(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procP2pAck(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procSendMessageTopic(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procJoinTopic(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procCreateTopic(ChannelHandlerContext ctx, CmdSimple cmd) {
+    }
+
+    public void procRouteMessageP2P(ChannelHandlerContext ctx, CmdSimple cmd) {
 
     }
 }

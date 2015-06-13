@@ -1,0 +1,17 @@
+{
+  "port"             : "18000",
+  "logFile"            : "manager.log",
+  "UUID"               : "18000",
+  "msgServerList"      : [
+    "127.0.0.1:19000",
+    "127.0.0.1:19001"
+  ],
+
+  "mongo"              : {
+    "Addr"      : "127.0.0.1",
+    "Port"      : ":27017",
+    "User"      : "",
+    "Password"  : ""
+
+  }
+}
