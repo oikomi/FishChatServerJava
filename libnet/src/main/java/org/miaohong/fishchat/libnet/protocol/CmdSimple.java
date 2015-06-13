@@ -1,45 +1,42 @@
 package org.miaohong.fishchat.libnet.protocol;
 
-import java.awt.*;
 import java.io.Serializable;
-import java.util.*;
-import java.util.List;
+import java.util.ArrayList;
+
 
 /**
  * Created by haroldmiao on 2015/6/12.
  */
 public class CmdSimple implements Serializable {
-    private String cmdName;
-    private ArrayList args = new ArrayList();
+    private String CmdName;
+    private ArrayList<String> Args = new ArrayList<String>();
 
     public CmdSimple() {
 
     }
 
     public CmdSimple(String cmdName) {
-        cmdName = cmdName;
+        this.CmdName = cmdName;
     }
-
-    public ArrayList getArgs() {
-        return args;
-    }
-
-    public void setArgs(ArrayList args) {
-        args = args;
-    }
-
 
     public String getCmdName() {
-        return cmdName;
+        return CmdName;
     }
 
     public void setCmdName(String cmdName) {
-        cmdName = cmdName;
+        CmdName = cmdName;
     }
 
+    public ArrayList<String> getArgs() {
+        return Args;
+    }
+
+    public void setArgs(ArrayList<String> args) {
+        Args = args;
+    }
 
     @Override
     public String toString() {
-        return cmdName + " " + args;
+        return CmdName + " " + Args;
     }
 }
