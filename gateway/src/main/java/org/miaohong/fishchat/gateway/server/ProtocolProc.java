@@ -28,8 +28,8 @@ public class ProtocolProc {
         CmdSimple respCmd = new CmdSimple(Cmd.SELECT_MSG_SERVER_FOR_CLIENT_CMD);
         args.add(msgServer);
         respCmd.setArgs(args);
+        Log.logger.info(respCmd.toString());
         ByteBuf resp = Unpooled.copiedBuffer(JSON.toJSONString(respCmd).getBytes());
         ctx.write(resp);
     }
-
 }

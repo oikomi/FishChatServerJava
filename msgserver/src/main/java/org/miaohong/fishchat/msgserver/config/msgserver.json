@@ -4,7 +4,7 @@
   "Port"                     : "19000",
   "LogFile"                  : "msg_server.log",
   "ScanDeadSessionTimeout"   : 50,
-  "ScanDeadSessionExpire"                   : 100,
+  "ScanDeadSessionExpire"    : 100,
 
   "MonitorBeatTime"          : 5,
 

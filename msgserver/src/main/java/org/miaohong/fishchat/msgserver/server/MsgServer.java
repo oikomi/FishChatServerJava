@@ -16,6 +16,7 @@ import org.miaohong.fishchat.msgserver.config.MsgServerConfig;
 public class MsgServer {
     private static class MsgServerChannelHandler extends ChannelInitializer<SocketChannel> {
         private MsgServerConfig mc;
+        private MsgServerContainer msc;
 
         public MsgServerChannelHandler(MsgServerConfig gc) {
             this.mc = gc;
@@ -24,7 +25,6 @@ public class MsgServer {
         @Override
         protected void initChannel(SocketChannel sc) throws Exception {
             ChannelPipeline pipeline = sc.pipeline();
-
             pipeline.addLast("frameDecoder",new LengthFieldBasedFrameDecoder(FrameConst.MAX_FRAME_LENGTH,
                     FrameConst.FIELD_OFFSET_LENGTH, FrameConst.HEADER_LENGTH,
                     FrameConst.ADJUSTMENT_LENGTH, FrameConst.STRIP_BYTES_LENGTH));

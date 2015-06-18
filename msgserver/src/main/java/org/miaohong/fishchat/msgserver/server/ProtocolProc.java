@@ -15,11 +15,12 @@ import java.util.ArrayList;
  * Created by haroldmiao on 2015/6/13.
  */
 public class ProtocolProc {
-
     private MsgServerConfig mc;
+    private MsgServerContainer msc;
 
     public ProtocolProc(MsgServerConfig mc) {
         this.mc = mc;
+        this.msc = new MsgServerContainer();
     }
 
 
@@ -31,6 +32,8 @@ public class ProtocolProc {
     public void procSendClientID(ChannelHandlerContext ctx, CmdSimple cmd) {
         Log.logger.info("procSendClientID");
         String cid = cmd.getArgs().get(0);
+
+
 
     }
 

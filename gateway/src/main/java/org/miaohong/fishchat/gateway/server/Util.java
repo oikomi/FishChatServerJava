@@ -1,6 +1,8 @@
 package org.miaohong.fishchat.gateway.server;
 
 
+import org.miaohong.fishchat.log.Log;
+
 import java.util.List;
 import java.util.Random;
 
@@ -10,8 +12,7 @@ import java.util.Random;
 public class Util {
     public static String selectMsgServer(List<String> msgServerList) {
         int length = msgServerList.size();
-        int index = new Random().nextInt(length - 1);
+        int index = new Random().nextInt(length);
         return msgServerList.get(index);
     }
-
 }

@@ -34,7 +34,7 @@ public class GateWayServerHandler extends ChannelHandlerAdapter {
 
         switch (cmd.getCmdName()) {
             case Cmd.REQ_MSG_SERVER_CMD:
-                //Log.logger.info("Cmd.REQ_MSG_SERVER_CMD");
+                Log.logger.info("Cmd.REQ_MSG_SERVER_CMD");
                 pp.procReqMsgServer(ctx, cmd);
         }
     }
