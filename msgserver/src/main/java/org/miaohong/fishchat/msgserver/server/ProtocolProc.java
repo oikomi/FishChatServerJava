@@ -25,6 +25,8 @@ public class ProtocolProc {
 
 
     public void procSendPing(ChannelHandlerContext ctx, CmdSimple cmd) {
+        Log.logger.info("procSendPing");
+
 
 
     }

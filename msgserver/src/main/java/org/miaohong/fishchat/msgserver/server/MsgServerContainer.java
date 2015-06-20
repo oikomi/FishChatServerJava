@@ -23,7 +23,7 @@ public class MsgServerContainer {
     }
 
     // Fixme : race condition
-    public void addSession(String cid, ChannelHandlerContext ctx) {
+    synchronized public void addSession(String cid, ChannelHandlerContext ctx) {
         sessionMap.put(cid, ctx);
     }
 

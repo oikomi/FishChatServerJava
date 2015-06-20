@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
 public class GateWayServer {
     private static class GateWayChannelHandler extends ChannelInitializer<SocketChannel> {
         private GateWayConfig gc;
-
         public GateWayChannelHandler(GateWayConfig gc) {
             this.gc = gc;
         }
@@ -37,6 +36,7 @@ public class GateWayServer {
             pipeline.addLast(new GateWayServerHandler(gc));
         }
     }
+
 
     public static void main(String[] args) {
         GateWayConfig gc = new GateWayConfig("../src/main/java/org/miaohong/fishchat/gateway/config/gateway.json");

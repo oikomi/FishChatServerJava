@@ -14,6 +14,8 @@ import org.miaohong.fishchat.msgserver.config.MsgServerConfig;
  * Created by haroldmiao on 2015/6/12.
  */
 public class MsgServer {
+    private static final String VERSION = "0.0.2";
+
     private static class MsgServerChannelHandler extends ChannelInitializer<SocketChannel> {
         private MsgServerConfig mc;
         private MsgServerContainer msc;
@@ -34,6 +36,7 @@ public class MsgServer {
     }
 
     public static void main(String[] args) {
+        Log.logger.info("msg_server version " + VERSION + " Copyright (c) 2014-2015 Harold Miao (miaohong@miaohong.org)");
         MsgServerConfig mc = new MsgServerConfig("../src/main/java/org/miaohong/fishchat/msgserver/config/msgserver.json");
         mc.Unmarshal();
         Log.logger.info("msg server start at " + mc.getMsgServerBean().getPort());
