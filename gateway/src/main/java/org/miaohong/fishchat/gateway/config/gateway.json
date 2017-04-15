@@ -1,7 +1,0 @@
-{
-  "port"             : "17000",
-  "logFile"            : "gateway.log",
-  "msgServerList"      : [
-    "127.0.0.1:19000"
-  ]
-}
