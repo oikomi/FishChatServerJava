@@ -5,7 +5,6 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import org.miaohong.fishchat.libnet.protocol.CmdSimple;
-import org.miaohong.fishchat.log.Log;
 import org.miaohong.fishchat.manager.config.ManagerConfig;
 
 import java.io.UnsupportedEncodingException;
@@ -20,13 +19,9 @@ public class ManagerServerHandler extends ChannelHandlerAdapter {
     }
 
     public void parseCmd(ChannelHandlerContext ctx, CmdSimple cmd) {
-        Log.logger.info("parseCmd");
         if (cmd == null) {
             return;
         }
-
-        Log.logger.info(cmd.getCmdName());
-
         switch (cmd.getCmdName()) {
 
 
@@ -45,9 +40,6 @@ public class ManagerServerHandler extends ChannelHandlerAdapter {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
-        Log.logger.info(reqStr);
-
         cmd = JSON.parseObject(reqStr, CmdSimple.class);
         parseCmd(ctx, cmd);
     }

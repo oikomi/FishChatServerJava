@@ -7,7 +7,6 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
 import org.miaohong.fishchat.libnet.api.Api;
 import org.miaohong.fishchat.libnet.frame.FrameConst;
-import org.miaohong.fishchat.log.Log;
 import org.miaohong.fishchat.router.config.RouterConfig;
 
 /**
@@ -36,7 +35,6 @@ public class Router {
     public static void main(String[] args) {
         RouterConfig rc = new RouterConfig("../src/main/java/org/miaohong/fishchat/router/config/router.json");
         rc.Unmarshal();
-        Log.logger.info("msg server start at " + rc.getRouterBean().getPort());
         Api.Bind(rc.getRouterBean().getPort(), new RouterChannelHandler(rc));
     }
 }

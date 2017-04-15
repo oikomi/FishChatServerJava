@@ -7,7 +7,6 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
 import org.miaohong.fishchat.libnet.api.Api;
 import org.miaohong.fishchat.libnet.frame.FrameConst;
-import org.miaohong.fishchat.log.Log;
 import org.miaohong.fishchat.msgserver.config.MsgServerConfig;
 
 /**
@@ -36,10 +35,8 @@ public class MsgServer {
     }
 
     public static void main(String[] args) {
-        Log.logger.info("msg_server version " + VERSION + " Copyright (c) 2014-2015 Harold Miao (miaohong@miaohong.org)");
         MsgServerConfig mc = new MsgServerConfig("../src/main/java/org/miaohong/fishchat/msgserver/config/msgserver.json");
         mc.Unmarshal();
-        Log.logger.info("msg server start at " + mc.getMsgServerBean().getPort());
         Api.Bind(mc.getMsgServerBean().getPort(), new MsgServerChannelHandler(mc));
     }
 }

@@ -7,7 +7,6 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
 import org.miaohong.fishchat.libnet.api.Api;
 import org.miaohong.fishchat.libnet.frame.FrameConst;
-import org.miaohong.fishchat.log.Log;
 import org.miaohong.fishchat.manager.config.ManagerConfig;
 
 /**
@@ -36,7 +35,6 @@ public class Manager {
     public static void main(String[] args) {
         ManagerConfig mc = new ManagerConfig("../src/main/java/org/miaohong/fishchat/manager/config/manager.json");
         mc.Unmarshal();
-        Log.logger.info("msg server start at " + mc.getManagerBean().getPort());
         Api.Bind(mc.getManagerBean().getPort(), new ManagerChannelHandler(mc));
     }
 }
