@@ -1,107 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.miaohong.fishchat</groupId>
-    <artifactId>server</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>fishchat</artifactId>
     <modules>
-        <module>logic</module>
-        <module>libnet</module>
+        <module>fishchat-core</module>
     </modules>
+    <groupId>org.miaohong</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.source.jdk>1.8</java.source.jdk>
+    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.2.RELEASE</version>
+        <version>2.0.0.M3</version>
     </parent>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.31</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>4.1.9.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>1.5.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-                <version>1.5.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>4.3.7.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-tomcat</artifactId>
-                <version>1.5.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>1.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>1.0.29</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>1.5.2.RELEASE</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-jdbc</artifactId>
-                <version>1.5.2.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-netty</artifactId>
-                <version>1.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-protobuf</artifactId>
-                <version>1.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.grpc</groupId>
-                <artifactId>grpc-stub</artifactId>
-                <version>1.2.0</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.M2</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <target>1.8</target>
-                    <source>1.8</source>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
