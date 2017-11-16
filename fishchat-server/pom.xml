@@ -9,8 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fishchat-core</artifactId>
+    <artifactId>fishchat-server</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>gateway</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
