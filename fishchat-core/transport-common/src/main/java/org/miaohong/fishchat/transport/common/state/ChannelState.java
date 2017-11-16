@@ -19,7 +19,7 @@ public enum ChannelState {
 
     public final int value;
 
-    private ChannelState(int value) {
+    ChannelState(int value) {
         this.value = value;
     }
 

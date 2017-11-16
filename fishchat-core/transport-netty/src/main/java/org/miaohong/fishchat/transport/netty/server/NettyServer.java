@@ -3,7 +3,9 @@ package org.miaohong.fishchat.transport.netty.server;
 import org.miaohong.fishchat.transport.common.server.AbstractServer;
 
 /**
- * Created by miaohong on 2017/11/16.
+ *
+ * @author miaohong
+ * @date 2017/11/16
  */
 public class NettyServer extends AbstractServer {
     @Override
