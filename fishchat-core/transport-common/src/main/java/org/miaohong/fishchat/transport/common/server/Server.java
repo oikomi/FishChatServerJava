@@ -9,26 +9,26 @@ import java.util.Collection;
  */
 public interface Server extends Channel {
 
-	/**
-	 * isActive
-	 *
-	 * @return
-	 */
-	boolean isActive();
+    /**
+     * isActive
+     *
+     * @return
+     */
+    boolean isActive();
 
-	/**
-	 * get channels.
-	 *
-	 * @return channels
-	 */
-	Collection<Channel> getChannels();
+    /**
+     * get channels.
+     *
+     * @return channels
+     */
+    Collection<Channel> getChannels();
 
-	/**
-	 * get channel.
-	 *
-	 * @param remoteAddress
-	 * @return channel
-	 */
-	Channel getChannel(InetSocketAddress remoteAddress);
+    /**
+     * get channel.
+     *
+     * @param remoteAddress
+     * @return channel
+     */
+    Channel getChannel(InetSocketAddress remoteAddress);
 
 }

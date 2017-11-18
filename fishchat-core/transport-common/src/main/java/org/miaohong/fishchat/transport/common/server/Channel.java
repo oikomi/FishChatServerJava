@@ -8,50 +8,50 @@ import java.net.InetSocketAddress;
  */
 public interface Channel {
 
-	/**
-	 * get local socket address.
-	 *
-	 * @return local address.
-	 */
-	InetSocketAddress getLocalAddress();
+    /**
+     * get local socket address.
+     *
+     * @return local address.
+     */
+    InetSocketAddress getLocalAddress();
 
-	/**
-	 * get remote socket address
-	 *
-	 * @return
-	 */
-	InetSocketAddress getRemoteAddress();
+    /**
+     * get remote socket address
+     *
+     * @return
+     */
+    InetSocketAddress getRemoteAddress();
 
 
-	/**
-	 * open the channel
-	 *
-	 * @return
-	 */
-	boolean open();
+    /**
+     * open the channel
+     *
+     * @return
+     */
+    boolean open();
 
-	/**
-	 * close the channel.
-	 */
-	void close();
+    /**
+     * close the channel.
+     */
+    void close();
 
-	/**
-	 * close the channel gracefully.
-	 */
-	void close(int timeout);
+    /**
+     * close the channel gracefully.
+     */
+    void close(int timeout);
 
-	/**
-	 * is closed.
-	 *
-	 * @return closed
-	 */
-	boolean isClosed();
+    /**
+     * is closed.
+     *
+     * @return closed
+     */
+    boolean isClosed();
 
-	/**
-	 * the node available status
-	 *
-	 * @return
-	 */
-	boolean isAvailable();
+    /**
+     * the node available status
+     *
+     * @return
+     */
+    boolean isAvailable();
 
 }

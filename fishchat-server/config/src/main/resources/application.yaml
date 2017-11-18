@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/oikomi/configrepo/
+        searchPaths: /
+      label: master
+

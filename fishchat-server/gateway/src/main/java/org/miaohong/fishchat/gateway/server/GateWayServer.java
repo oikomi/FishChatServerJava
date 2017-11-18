@@ -17,16 +17,16 @@ import java.util.Optional;
 @Component
 public class GateWayServer implements CommandLineRunner {
 
-	@Autowired
-	private GateWayServerProperties gwsProperties;
+    @Autowired
+    private GateWayServerProperties gwsProperties;
 
-	private NettyServer nettyServer;
+    private NettyServer nettyServer;
 
-	@Override
-	public void run(String... args) throws Exception {
-		Optional.ofNullable(gwsProperties.getUrl()).ifPresent((url) -> {
-			nettyServer = new NettyServer(URL.valueOf(url));
-			nettyServer.open();
-		});
-	}
+    @Override
+    public void run(String... args) throws Exception {
+        Optional.ofNullable(gwsProperties.getUrl()).ifPresent((url) -> {
+            nettyServer = new NettyServer(URL.valueOf(url));
+            nettyServer.open();
+        });
+    }
 }

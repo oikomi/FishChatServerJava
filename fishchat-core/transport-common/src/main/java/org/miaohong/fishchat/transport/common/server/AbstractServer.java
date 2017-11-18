@@ -11,43 +11,43 @@ import java.util.Collection;
  */
 public abstract class AbstractServer implements Server {
 
-	protected InetSocketAddress localAddress;
-	protected InetSocketAddress remoteAddress;
+    protected InetSocketAddress localAddress;
+    protected InetSocketAddress remoteAddress;
 
-	protected volatile ChannelState state = ChannelState.UNINIT;
+    protected volatile ChannelState state = ChannelState.UNINIT;
 
-	public AbstractServer() {
-	}
+    public AbstractServer() {
+    }
 
 
-	@Override
-	public InetSocketAddress getLocalAddress() {
-		return localAddress;
-	}
+    @Override
+    public InetSocketAddress getLocalAddress() {
+        return localAddress;
+    }
 
-	public void setLocalAddress(InetSocketAddress localAddress) {
-		this.localAddress = localAddress;
-	}
+    public void setLocalAddress(InetSocketAddress localAddress) {
+        this.localAddress = localAddress;
+    }
 
-	@Override
-	public InetSocketAddress getRemoteAddress() {
-		return remoteAddress;
-	}
+    @Override
+    public InetSocketAddress getRemoteAddress() {
+        return remoteAddress;
+    }
 
-	public void setRemoteAddress(InetSocketAddress remoteAddress) {
-		this.remoteAddress = remoteAddress;
-	}
+    public void setRemoteAddress(InetSocketAddress remoteAddress) {
+        this.remoteAddress = remoteAddress;
+    }
 
-	@Override
-	public Collection<Channel> getChannels() {
+    @Override
+    public Collection<Channel> getChannels() {
 //        throw new MotanFrameworkException(this.getClass().getName() + " getChannels() method unsupport " + url);
-		return null;
-	}
+        return null;
+    }
 
-	@Override
-	public Channel getChannel(InetSocketAddress remoteAddress) {
+    @Override
+    public Channel getChannel(InetSocketAddress remoteAddress) {
 //        throw new MotanFrameworkException(this.getClass().getName() + " getChannel(InetSocketAddress) method unsupport " + url);
-		return null;
+        return null;
 
-	}
+    }
 }

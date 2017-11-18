@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "server")
 public class GateWayServerProperties {
 
-	@Getter
-	@Setter
-	private String name;
+    @Getter
+    @Setter
+    private String name;
 
-	@Getter
-	@Setter
-	private String url;
+    @Getter
+    @Setter
+    private String url;
 
 }
