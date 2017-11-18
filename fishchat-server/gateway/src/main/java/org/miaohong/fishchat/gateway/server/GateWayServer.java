@@ -23,7 +23,6 @@ public class GateWayServer implements CommandLineRunner {
 
     private NettyServer nettyServer;
 
-
     @Override
     public void run(String... args) throws Exception {
         Optional.ofNullable(gwsProperties.getUrl()).ifPresent((url) -> {
