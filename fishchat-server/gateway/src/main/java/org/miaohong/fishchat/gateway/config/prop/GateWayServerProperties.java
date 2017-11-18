@@ -11,11 +11,13 @@ import org.springframework.stereotype.Component;
  * @date 2017/11/16
  */
 @Component
+@ConfigurationProperties
 //@ConfigurationProperties(prefix = "server")
 public class GateWayServerProperties {
 
     @Getter
     @Setter
+    @Value("${name}")
     private String name;
 //
 //    @Getter
