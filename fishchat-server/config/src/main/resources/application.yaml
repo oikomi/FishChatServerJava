@@ -11,6 +11,6 @@ spring:
       server:
         git:
           uri: https://github.com/oikomi/FishChatServerJava/
-        searchPaths: configrepo
+          searchPaths: configrepo
       label: master
 

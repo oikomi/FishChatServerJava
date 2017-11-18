@@ -3,30 +3,24 @@ package org.miaohong.fishchat.gateway.config.prop;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author miaohong
  * @date 2017/11/16
  */
-@Component
-@ConfigurationProperties
-//@ConfigurationProperties(prefix = "server")
+@Configuration
 public class GateWayServerProperties {
 
     @Getter
     @Setter
-    @Value("${name}")
+    @Value("${server.name}")
     private String name;
-//
-//    @Getter
-//    @Setter
-//    private String url;
+
 
     @Getter
     @Setter
-    @Value("${url}")
+    @Value("${server.url}")
     private String url;
 
 }

@@ -1,16 +1,4 @@
 
-#server:
-#  name: gateway
-#  url: tcp://0.0.0.0:17001
 
-
-# 配置中心服务的地址
-#spring:
-#  cloud:
-#    config:
-#      uri: localhost:9999
-#      name: gateway
-#      label: master
-#      profile: dev
 
 
