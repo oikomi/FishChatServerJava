@@ -24,7 +24,7 @@ public class GateWayServerProperties {
 
     @Getter
     @Setter
-    @Value("${server.url}")
+    @Value("${url}")
     private String url;
 
 }
