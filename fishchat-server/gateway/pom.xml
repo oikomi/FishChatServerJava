@@ -44,7 +44,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>
-                        org.miaohong.fishchat.gateway.GateWayServer
+                        org.miaohong.fishchat.gateway.GateWayApp
                     </mainClass>
                 </configuration>
                 <executions>

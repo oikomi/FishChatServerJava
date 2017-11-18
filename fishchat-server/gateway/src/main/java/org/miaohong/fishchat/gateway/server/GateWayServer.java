@@ -5,6 +5,7 @@ import org.miaohong.fishchat.gateway.config.prop.GateWayServerProperties;
 import org.miaohong.fishchat.transport.common.url.URL;
 import org.miaohong.fishchat.transport.netty.server.NettyServer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,7 @@ public class GateWayServer implements CommandLineRunner {
     private GateWayServerProperties gwsProperties;
 
     private NettyServer nettyServer;
+
 
     @Override
     public void run(String... args) throws Exception {
