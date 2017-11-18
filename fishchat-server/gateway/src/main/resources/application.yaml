@@ -5,12 +5,12 @@
 
 
 # 配置中心服务的地址
-spring:
-  cloud:
-    config:
-      uri: localhost:9999
-      name: gateway
-      label: master
-      profile: dev
+#spring:
+#  cloud:
+#    config:
+#      uri: localhost:9999
+#      name: gateway
+#      label: master
+#      profile: dev
 
 
