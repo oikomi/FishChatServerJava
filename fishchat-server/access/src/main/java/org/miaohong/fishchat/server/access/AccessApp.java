@@ -1,5 +1,6 @@
 package org.miaohong.fishchat.server.access;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -7,4 +8,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class AccessApp {
+
+    public static void main(String[] args) {
+
+        SpringApplication app = new SpringApplication(AccessApp.class);
+        app.run(args);
+
+    }
+
 }
