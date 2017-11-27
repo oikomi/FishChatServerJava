@@ -14,6 +14,11 @@
     <modules>
         <module>gateway</module>
         <module>config</module>
+        <module>access</module>
+        <module>manager</module>
+        <module>logic</module>
+        <module>notify</module>
+        <module>register</module>
     </modules>
 
     <dependencyManagement>
