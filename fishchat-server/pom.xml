@@ -19,6 +19,7 @@
         <module>logic</module>
         <module>notify</module>
         <module>register</module>
+        <module>discovery</module>
     </modules>
 
     <dependencyManagement>

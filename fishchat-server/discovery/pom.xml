@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>notify</artifactId>
+    <artifactId>discovery</artifactId>
 
     <packaging>jar</packaging>
 
@@ -20,7 +20,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -39,7 +39,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>
-                        org.miaohong.fishchat.server.notify.NotifyApp
+                        org.miaohong.fishchat.server.register.RegisterApp
                     </mainClass>
                 </configuration>
                 <executions>
