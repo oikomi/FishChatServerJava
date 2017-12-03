@@ -39,7 +39,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>
-                        org.miaohong.fishchat.server.register.RegisterApp
+                        org.miaohong.fishchat.server.discovery.DiscoveryApp
                     </mainClass>
                 </configuration>
                 <executions>
