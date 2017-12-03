@@ -1,0 +1,11 @@
+
+
+server:
+  port: 1112
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    register-with-eureka: false
+    fetch-registry: false
